@@ -59,7 +59,7 @@ def feed(message):
         except UnboundLocalError: # User is not listening to anything
             pass        
 
-    except HTTPError: # Token is expired, it will automatically get a new one without any user interaction
+    except: # Token is expired, it will automatically get a new one without any user interaction
         spotifyToken = util.prompt_for_user_token(spotifyUsername,spotifyScope,client_id=os.environ.get('CLIENT_ID'),client_secret=os.environ.get('CLIENT_SECRET'),redirect_uri=os.environ.get('REDIRECT_URI'))
         sp = spotipy.Spotify(auth=spotifyToken)
             
