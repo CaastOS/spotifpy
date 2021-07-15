@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  height: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+#bg-container {
+  filter: brightness(30%);
+}
+#background-pic {
+  width: 100%;
+  height: 100vh;
+  filter: blur(12px);
+  position: absolute;
+}
+
+body > main > div:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#album-cover {
+  width: 40%;
+  height: auto;
+  border: 3px groove white;
+  border-radius: 20px;
+}
+
+#title {
+  color: white;
+  font-size: 2rem;
+}
+
+#search > i {
+  color: white;
+  display: inline-block;
+  border-radius: 70px;
+  border: 2px solid white;
+  padding: 2px 6px;
+  margin-top: -1rem;
+  padding-top: 6px;
+  background: white;
+}
+
+#search > i > img {
+  width: 1.4rem;
+}
+#search > i:hover {
+  background: white;
+  color: black;
+  -webkit-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  -moz-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  -ms-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  -o-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #f7f7f7;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  -moz-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  -ms-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  -o-transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  transform: rotateX(-180deg) rotateY(180deg) rotateZ(-180deg);
+  transition: 0.3s all;
+}
+
+@media (max-width: 500px) {
+  #album-cover {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  #album-cover {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #album-cover {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1100px) {
+  #album-cover {
+    width: 50%;
+  }
+}

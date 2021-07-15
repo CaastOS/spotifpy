@@ -1,0 +1,9 @@
+lyricsgenius==2.0.2
+spotipy==2.16.0
+Flask==1.1.2
+Flask-SocketIO==4.3.1
+python-engineio==3.13.2
+python-socketio==4.6.0
+python-dotenv==0.18.0
+gunicorn==20.1.0
+eventlet==0.30.2
