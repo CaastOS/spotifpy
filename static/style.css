@@ -34,7 +34,7 @@ body > main > div:nth-child(2) {
 
 #album-cover {
   width: 100%;
-  max-width: 540px;
+  max-width: 520px;
   height: auto;
   border: 3px groove white;
   border-radius: 20px;
