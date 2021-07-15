@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: black;
   height: 100%;
+  width: 100%;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -26,13 +27,14 @@ body > main > div:nth-child(2) {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  width: 70%;
   text-align: center;
   margin: 0 auto;
+  width: 80%;
 }
 
 #album-cover {
-  width: 40%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border: 3px groove white;
   border-radius: 20px;
@@ -41,6 +43,7 @@ body > main > div:nth-child(2) {
 #title {
   color: white;
   font-size: 2rem;
+  margin: 0.5rem 0;
 }
 
 #search > i {
@@ -49,9 +52,9 @@ body > main > div:nth-child(2) {
   border-radius: 70px;
   border: 2px solid white;
   padding: 2px 6px;
-  margin-top: -1rem;
   padding-top: 6px;
   background: white;
+  margin-top: 1rem
 }
 
 #search > i > img {
@@ -111,26 +114,10 @@ body > main > div:nth-child(2) {
   transition: 0.3s all;
 }
 
-@media (max-width: 500px) {
-  #album-cover {
-    width: 90%;
-  }
-}
+@media only screen and (max-width: 600px) {
 
-@media (max-width: 900px) {
   #album-cover {
-    width: 80%;
+    max-width: 1000px;
   }
-}
 
-@media (max-width: 1100px) {
-  #album-cover {
-    width: 65%;
-  }
-}
-
-@media (min-width: 1100px) {
-  #album-cover {
-    width: 50%;
-  }
 }
