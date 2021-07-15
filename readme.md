@@ -1,10 +1,11 @@
 # Spotifpy
 
-Spotifpy is a web application created in Python and with the help of Flask and Socket.io. It uses the Spotify (thanks to spotipy) and the Genius API.
+Spotifpy is a web application created in Python and based on Flask and Socket.io.
+
 You can see a live version [here](https://spotifpy.herokuapp.com), in case I am listening to music (most likely). Otherwise, you will see a placeholder showing the UI of the application.
 
 ## Installation
-_This application is not intended for public use, as you will have to register this application to obtain the various keys. I have not entered my keys as the plan is rate limited, and the keys are not releasable. In any case, if you want to try it, this is the procedure._
+_This application is not intended for public use, as you will have to register your own application to obtain the various keys. In any case, if you want to try it, this is the procedure._
 
 As a first step, use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.
 
